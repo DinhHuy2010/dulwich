@@ -27,6 +27,7 @@ classifiers = [
 requires-python = ">=3.8"
 dependencies = [
     "urllib3>=1.25",
+    "typing-extensions>=4.12.2"
 ]
 dynamic = ["version"]
 
@@ -42,7 +43,8 @@ https = ["urllib3>=1.24.1"]
 pgp = ["gpg"]
 paramiko = ["paramiko"]
 dev = [
-    "ruff==0.6.7"
+    "ruff==0.6.7",
+    "mypy==1.11.2"
 ]
 
 [project.scripts]
@@ -50,6 +52,8 @@ dulwich = "dulwich.cli:main"
 
 [tool.mypy]
 ignore_missing_imports = true
+python_version = "3.8"
+strict = true
 
 [tool.setuptools]
 packages = [
