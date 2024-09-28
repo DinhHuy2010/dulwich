@@ -27,7 +27,8 @@ classifiers = [
 requires-python = ">=3.8"
 dependencies = [
     "urllib3>=1.25",
-    "typing-extensions>=4.12.2"
+    "typing-extensions>=4.12.2",
+    "more-itertools==10.5.0"
 ]
 dynamic = ["version"]
 
